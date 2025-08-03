@@ -18,7 +18,7 @@ public class JokeSyncFunction(ILogger<JokeSyncFunction> logger, IJokeProcessor j
         catch (Exception ex)
         {
             logger.LogError(ex, "Error executing {function}", nameof(JokeSyncFunction));
-            throw; // rethrow to ensure the function fails and can be retried
+            throw;
         }
 
     }
